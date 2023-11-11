@@ -76,9 +76,9 @@ module Jekyll
         %{
 <div class="terminal">
   <nav>
-    <a href="#" class="close">close</a>
-    <a href="#" class="minimize">minimize</a>
-    <a href="#" class="deactivate">deactivate</a>
+  <a class="deactivate">deactivate</a>
+  <a class="deactivate">deactivate</a>
+  <a class="close">close</a>
   </nav>
   <#{tag_name} class="title">Terminal</#{tag_name}>
   <pre>
