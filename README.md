@@ -46,7 +46,7 @@ $ echo
 
 It will get rendered nicely, with a drop shadow, as shown on snapshot below:
 
-![](https://github.com/lironmele/jekyll-terminal/blob/master/screenshot.png)
+![](https://github.com/lironmele/jekyll-terminal/blob/ubuntu/screenshot.png)
 
 Download the self-contained `sample.html` file in this repository to see how it is rendered in your favorite browser. Or check an [online rendering](http://htmlpreview.github.io/?https://github.com/Xadeck/jekyll-terminal/blob/master/sample.html).
 
