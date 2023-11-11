@@ -12,8 +12,13 @@ which makes it easily tweakable.
 
 First, add the plugin to your jekyll site, by putting the following lines in your `_config.yml` file inside the generaged jekyll directory.
 ```yaml
-gems: 
+plugins: 
   - jekyll-terminal
+```
+
+Then, add the package to your `Gemfile`:
+```yaml
+gem 'jekyll-terminal', ">=0.1.1"
 ```
 
 Then, add the following tag inside your `_includes/head.html` layout, next to the existing stylesheets tags.
@@ -27,15 +32,21 @@ Then, in any posts, simply wrap shell instructions inside a `terminal` block:
 ```liquid
 {% terminal %}
 $ echo "Hello world!"
-Hello world
+Hello world!
 $ date
-Sun Dec 14 09:56:26 CET 2014
+Sat Nov 11 09:56:26 CET 2023
+$ cat <<END
+/This will disappear in void
+/END
+$ echo 'this line is an artificially long comand' | sed 's/comand/command to test rendering/' | grep line | tee /dev/null
+this is an artificially long command to test rendering
+$ echo
 {% endterminal %}
 ```
 
 It will get rendered nicely, with a drop shadow, as shown on snapshot below:
 
-![](https://github.com/Xadeck/jekyll-terminal/blob/master/screenshot.png)
+![](https://github.com/lironmele/jekyll-terminal/blob/master/screenshot.png)
 
 Download the self-contained `sample.html` file in this repository to see how it is rendered in your favorite browser. Or check an [online rendering](http://htmlpreview.github.io/?https://github.com/Xadeck/jekyll-terminal/blob/master/sample.html).
 
