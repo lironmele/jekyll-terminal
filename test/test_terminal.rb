@@ -45,7 +45,7 @@ class TerminalTest < Minitest::Test
 $ echo "Hello world!"
 Hello world!
 $ date
-Sun Dec 14 09:56:26 CET 2014
+Sat Nov 11 09:56:26 CET 2023
 $ cat <<END
 /This will disappear in void
 /END
